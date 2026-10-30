@@ -1,0 +1,16 @@
+schema: spec-driven
+
+context: |
+  Glance shows events from many sources on one touch display. PLAN.md at the repo root is the overall plan.
+  Components run on two machines: an Ubuntu 26.04 workstation (GNOME 50, Wayland) and a work MacBook (macOS, M3 Max).
+  The machines reach each other over Tailscale. The hub listens only on localhost and the Tailscale interface.
+  All code is TypeScript on Node 24, in an npm workspaces monorepo: packages/* and plugins/*.
+  The hub knows nothing about specific sources. Every source is a plugin that speaks the Glance protocol.
+  Plugins never send HTML or JavaScript to the dashboard. Event bodies are plain text.
+  Write all artifacts in ASD-STE100 Simplified Technical English style: short sentences, active voice, no em dashes, no semicolons.
+
+rules:
+  proposal:
+    - State what is out of scope.
+  tasks:
+    - Every task states how to verify it.

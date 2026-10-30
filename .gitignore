@@ -1,0 +1,32 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+coverage/
+
+# Node single executable builds
+*.blob
+plugins/mac-notify/bin/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local config, secrets and tokens
+.env
+.env.*
+!.env.example
+clients.json
+
+# EDID test output: machine-specific and contains monitor serial numbers
+tools/edid-test-results/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
